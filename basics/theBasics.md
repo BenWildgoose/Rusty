@@ -52,7 +52,7 @@ println!("What is your name?");
 Firstly asks the users name. Then creates a mutable string (the input) and a immutable greeting symbol. Uses stdin from the stdio to read the line. Has a `.except` catch to tell users if they put no input in. Finally prints with {} to represent where the variables will go. `.trim_end()` gets rid of the new line character after the name.
 
 
-## Constants
+# Types
 
 To make a constant unassigned integer of size 32 bits:
 ```
@@ -61,3 +61,7 @@ const ONE_MIL: u32 = 1000000;
 > Floats of size 32 bits are denoted as `f32`
 
 > To make a string just use `""`
+
+## Shadowing
+
+In Rust, you can use the same name for different variables, given that the type is different. This is a bad idea though as different variables could easily be confused.
